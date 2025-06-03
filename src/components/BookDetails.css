@@ -49,6 +49,7 @@
   margin-top: 2rem;
 }
 
+/* Responsive */
 @media (min-width: 768px) {
   .book-details-container {
     flex-direction: row;

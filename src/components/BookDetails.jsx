@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import "./BookDetails.css"; // yeni stil faylı əlavə edirik
+import "./BookDetails.css";
 
 const BookDetails = () => {
   const { id } = useParams();
