@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/bookaide/static/css/main.af584543.css",
+    "main.js": "/bookaide/static/js/main.faf5eb49.js",
+    "index.html": "/bookaide/index.html",
+    "main.af584543.css.map": "/bookaide/static/css/main.af584543.css.map",
+    "main.faf5eb49.js.map": "/bookaide/static/js/main.faf5eb49.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.af584543.css",
+    "static/js/main.faf5eb49.js"
+  ]
+}
