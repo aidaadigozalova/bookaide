@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #333;
+  color: white;
+}
+
+.favorites {
+  padding: 1rem;
+}
+
+.favorites .book-card {
+  margin-bottom: 1rem;
+}
+
+.favorites button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.favorites button:hover {
+  background-color: #e60000;
+}
+
+:root {
+  --bg-color-light: #ffffff;
+  --text-color-light: #000000;
+
+  --bg-color-dark: #121212;
+  --text-color-dark: #f0f0f0;
+}
+
+[data-theme="light"] {
+  background-color: var(--bg-color-light);
+  color: var(--text-color-light);
+}
+
+[data-theme="dark"] {
+  background-color: var(--bg-color-dark);
+  color: var(--text-color-dark);
+}
+
+.navbar a {
+  color: white;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+.book-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.book-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 5px;
+  width: 200px;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.search-bar input {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.search-bar button {
+  padding: 0.5rem 1rem;
+  margin-left: 0.5rem;
+  font-size: 1rem;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+  .book-list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 991px) {
+  .book-list {
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 992px) {
+  .book-list {
+    justify-content: flex-start;
+  }
+}
+
+.add-fav-btn {
+  background-color: #e76f51;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 3px 6px rgba(231, 111, 81, 0.5);
+  margin-top: 10px;
+  margin-left: 50px;
+  display: inline-block;
+}
+
+.add-fav-btn:hover {
+  background-color: #d65a3b;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(214, 90, 59, 0.6);
+}
+
+.validation-message {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-align: center;
+}
